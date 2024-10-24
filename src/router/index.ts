@@ -45,15 +45,7 @@ const router = createRouter({
         import("../views/pages/dashboard/siniestros/DashboardSiniestros.vue"),
       meta: { layout: "layout" },
     },
-    {
-      path: "/prueba",
-      name: "prueba",
-      component: () =>
-        import(
-          "../views/pages/dashboard/pruebas/siniestros/DashboardSiniestros.vue"
-        ),
-      meta: { layout: "layout" },
-    },
+
     {
       path: "/employee",
       name: "employee",

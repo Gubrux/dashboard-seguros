@@ -29,7 +29,6 @@ const MenuItems = reactive<menuType[]>([
       { menu: "Dashboard Produccion", to: "/" },
       { menu: "Dashboard Siniestros", to: "/dashboard-siniestros" },
       { menu: "Dashboard Comparativo", to: "/dashboard-comparativos" },
-      // { menu: "Dashboard Prueba", to: "/prueba" },
       // { menu: "Dashboard Dark", to: "/index-2" },
     ],
   },
