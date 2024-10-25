@@ -115,15 +115,15 @@
         <div class="col-xl-6 col-lg-6">
           <div class="pages-left h-100">
             <div class="login-content">
-              <RouterLink to="/"
+              <!-- <RouterLink to="/"
                 ><img src="../../assets/icons/" class="mb-3 logo-dark" alt=""
-              /></RouterLink>
-              <RouterLink to="/"
+              /></RouterLink> -->
+              <!-- <RouterLink to="/"
                 ><img
                   src="../../assets/icons/segu_logo.jpg"
                   class="mb-3 logo-light"
                   alt=""
-              /></RouterLink>
+              /></RouterLink> -->
               <!-- <p>
                 CRM dashboard uses line charts to visualize customer-related
                 metrics and trends over time.
