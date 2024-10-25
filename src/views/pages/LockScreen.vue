@@ -17,7 +17,10 @@
                   class="form-control"
                   value="123456"
                 />
-                <span :class="`show-pass eye ${show ? 'active' : ''}`" @click="show = !show">
+                <span
+                  :class="`show-pass eye ${show ? 'active' : ''}`"
+                  @click="show = !show"
+                >
                   <i :class="`fa fa-eye-slash`"></i>
                   <i class="fa fa-eye"></i>
                 </span>
@@ -25,20 +28,29 @@
               <div class="form-row d-flex justify-content-between mt-4 mb-2">
                 <div class="mb-4">
                   <div class="form-check custom-checkbox mb-3">
-                    <input type="checkbox" class="form-check-input" id="customCheckBox1" required />
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="customCheckBox1"
+                      required
+                    />
                     <label class="form-check-label" for="customCheckBox1"
                       >Remember my preference</label
                     >
                   </div>
                 </div>
                 <div class="mb-4">
-                  <RouterLink to="/page-forgot-password" class="btn-link text-primary"
+                  <RouterLink
+                    to="/page-forgot-password"
+                    class="btn-link text-primary"
                     >Forgot Password?</RouterLink
                   >
                 </div>
               </div>
               <div class="text-center mb-4">
-                <button type="submit" class="btn btn-primary btn-block">Unlock</button>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Unlock
+                </button>
               </div>
               <h6 class="login-title"><span>Or continue with</span></h6>
 
@@ -76,7 +88,9 @@
               </div>
               <p class="text-center">
                 Not registered?
-                <RouterLink class="btn-link text-primary" to="/page-register">Register</RouterLink>
+                <RouterLink class="btn-link text-primary" to="/page-register"
+                  >Register</RouterLink
+                >
               </p>
             </form>
           </div>
@@ -85,19 +99,22 @@
           <div class="pages-left h-100">
             <div class="login-content">
               <RouterLink to="/"
-                ><img src="../../assets/images/logo-full.png" class="mb-3 logo-dark" alt=""
+                ><img
+                  src="../../assets/images/logo-full.png"
+                  class="mb-3 logo-dark"
+                  alt=""
               /></RouterLink>
               <RouterLink to="/"
-                ><img src="../../assets/images/logi-white.png" class="mb-3 logo-light" alt=""
+                ><img
+                  src="../../assets/images/logi-white.png"
+                  class="mb-3 logo-light"
+                  alt=""
               /></RouterLink>
 
-              <p>
-                CRM dashboard uses line charts to visualize customer-related metrics and trends over
-                time.
-              </p>
+              <p>Explora, interactúa y gestiona con facilidad.</p>
             </div>
             <div class="login-media text-center">
-              <img src="../../assets/images/login.png" alt="" />
+              <img src="../../assets/images/loggin.png" alt="" />
             </div>
           </div>
         </div>
@@ -107,17 +124,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { RouterLink } from 'vue-router'
+import { defineComponent, ref } from "vue";
+import { RouterLink } from "vue-router";
 
 export default defineComponent({
-  name: 'lockScreen',
+  name: "lockScreen",
   components: { RouterLink },
   setup() {
-    const show = ref(false)
-    return { show }
-  }
-})
+    const show = ref(false);
+    return { show };
+  },
+});
 </script>
 
 <style scoped></style>

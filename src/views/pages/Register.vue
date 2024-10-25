@@ -5,50 +5,73 @@
         <div class="col-lg-6 col-md-7 col-sm-12 mx-auto align-self-center">
           <div class="login-form">
             <div class="text-center">
-              <h3 class="title">Sign up your account</h3>
-              <p>Sign in to your account to start using W3CRM</p>
+              <h3 class="title">Registro</h3>
+              <p>Crea tu cuenta para continuar al Dashboard</p>
             </div>
             <form action="/">
               <div class="mb-4">
-                <label class="mb-1 text-dark">Username</label>
-                <input type="text" class="form-control form-control" value="username" />
+                <label class="mb-1 text-dark">Nombre de usuario</label>
+                <input
+                  type="text"
+                  class="form-control form-control"
+                  value=""
+                  placeholder="RodrigoCáceres"
+                />
               </div>
               <div class="mb-4">
                 <label class="mb-1 text-dark">Email</label>
-                <input type="email" class="form-control form-control" value="hello@example.com" />
+                <input
+                  type="email"
+                  class="form-control form-control"
+                  value=""
+                  placeholder="rodrigo123@ejemplo.com"
+                />
               </div>
               <div class="mb-4 position-relative">
-                <label class="mb-1 text-dark">Password</label>
+                <label class="mb-1 text-dark">Conrtaseña</label>
                 <input
                   :type="show ? 'text' : 'password'"
                   id="dz-password"
                   class="form-control"
-                  value="123456"
+                  value=""
+                  placeholder="*******"
                 />
-                <span :class="`show-pass eye ${show ? 'active' : ''}`" @click="show = !show">
+                <span
+                  :class="`show-pass eye ${show ? 'active' : ''}`"
+                  @click="show = !show"
+                >
                   <i :class="`fa fa-eye-slash`"></i>
                   <i class="fa fa-eye"></i>
                 </span>
               </div>
               <div class="form-row d-flex justify-content-between mt-4 mb-2">
-                <div class="mb-4">
+                <!-- <div class="mb-4">
                   <div class="form-check custom-checkbox mb-3">
-                    <input type="checkbox" class="form-check-input" id="customCheckBox1" required />
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="customCheckBox1"
+                      required
+                    />
                     <label class="form-check-label" for="customCheckBox1"
                       >Remember my preference</label
                     >
                   </div>
-                </div>
+                </div> -->
                 <div class="mb-4">
-                  <RouterLink to="/page-login" class="btn-link text-primary">Sign in</RouterLink>
+                  <RouterLink to="/page-login" class="btn-link text-primary"
+                    >Iniciar sesión</RouterLink
+                  >
                 </div>
               </div>
               <div class="text-center mb-4">
-                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Registrarse
+                </button>
               </div>
-              <h6 class="login-title"><span>Or continue with</span></h6>
+              <!-- <h6 class="login-title"><span>Or continue with</span></h6> -->
 
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <ul class="d-flex align-self-center justify-content-center">
                   <li>
                     <a
@@ -79,11 +102,13 @@
                     ></a>
                   </li>
                 </ul>
-              </div>
-              <p class="text-center">
+              </div> -->
+              <!-- <p class="text-center">
                 Not registered?
-                <RouterLink class="btn-link text-primary" to="/page-register">Register</RouterLink>
-              </p>
+                <RouterLink class="btn-link text-primary" to="/page-register"
+                  >Register</RouterLink
+                >
+              </p> -->
             </form>
           </div>
         </div>
@@ -91,18 +116,22 @@
           <div class="pages-left h-100">
             <div class="login-content">
               <RouterLink to="/"
-                ><img src="../../assets/images/logo-full.png" class="mb-3 logo-dark" alt=""
+                ><img src="../../assets/icons/" class="mb-3 logo-dark" alt=""
               /></RouterLink>
               <RouterLink to="/"
-                ><img src="../../assets/images/logi-white.png" class="mb-3 logo-light" alt=""
+                ><img
+                  src="../../assets/icons/segu_logo.jpg"
+                  class="mb-3 logo-light"
+                  alt=""
               /></RouterLink>
-              <p>
-                CRM dashboard uses line charts to visualize customer-related metrics and trends over
-                time.
-              </p>
+              <!-- <p>
+                CRM dashboard uses line charts to visualize customer-related
+                metrics and trends over time.
+              </p> -->
+              <p>Explora, interactúa y gestiona con facilidad.</p>
             </div>
             <div class="login-media text-center">
-              <img src="../../assets/images/login.png" alt="" />
+              <img src="../../assets/images/loggin.png" alt="" />
             </div>
           </div>
         </div>
@@ -112,17 +141,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { RouterLink } from 'vue-router'
+import { defineComponent, ref } from "vue";
+import { RouterLink } from "vue-router";
 
 export default defineComponent({
-  name: 'register_',
+  name: "register_",
   components: { RouterLink },
   setup() {
-    const show = ref(false)
-    return { show }
-  }
-})
+    const show = ref(false);
+    return { show };
+  },
+});
 </script>
 
 <style scoped></style>

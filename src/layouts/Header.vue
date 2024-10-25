@@ -4,7 +4,7 @@
       <nav class="navbar navbar-expand">
         <div class="collapse navbar-collapse justify-content-between">
           <div class="header-left">
-            <h4 class="text-danger">Valores expresados en miles de Gs.</h4>
+            <!-- <h4 class="text-danger">Valores expresados en miles de Gs.</h4> -->
             <!-- <form>
               <div class="input-group search-area">
                 <span class="input-group-text"

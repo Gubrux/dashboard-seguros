@@ -1,7 +1,7 @@
 import type { App } from "vue";
 
 export const moneyFormatter = (value: number) => {
-  value = value / 1000;
+  // value = value / 1000;
   return value.toLocaleString("es-PY", {
     style: "currency",
     currency: "PYG",

@@ -5,16 +5,21 @@
         <div class="col-lg-6 col-md-7 col-sm-12 mx-auto align-self-center">
           <div class="login-form">
             <div class="text-center">
-              <h3 class="title">Forgot password</h3>
-              <p>Sign in to your account to start using W3CRM</p>
+              <h3 class="title">Recupera tu contraseña</h3>
+              <p>Inicie sesión para continuar al Dashboard</p>
             </div>
             <form>
               <div class="mb-4">
                 <label class="mb-1 text-dark">Email</label>
-                <input type="email" class="form-control form-control" value="hello@example.com" />
+                <input
+                  type="email"
+                  class="form-control form-control"
+                  value=""
+                  placeholder="rodrigo123@ejemplo.com"
+                />
               </div>
               <div class="form-row d-flex justify-content-between mt-4 mb-2">
-                <div class="mb-4">
+                <!-- <div class="mb-4">
                   <div class="form-check custom-checkbox mb-3">
                     <input
                       type="checkbox"
@@ -26,17 +31,23 @@
                       >Remember my preference</label
                     >
                   </div>
-                </div>
-                <div class="mb-4">
-                  <RouterLink to="/page-forgot-password" class="btn-link text-primary">Need help?</RouterLink>
-                </div>
+                </div> -->
+                <!-- <div class="mb-4">
+                  <RouterLink
+                    to="/page-forgot-password"
+                    class="btn-link text-primary"
+                    >Need help?</RouterLink
+                  >
+                </div> -->
               </div>
               <div class="text-center mb-4">
-                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Recuperar contraseña
+                </button>
               </div>
-              <h6 class="login-title"><span>Or continue with</span></h6>
+              <!-- <h6 class="login-title"><span>Or continue with</span></h6> -->
 
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <ul class="d-flex align-self-center justify-content-center">
                   <li>
                     <a
@@ -67,10 +78,12 @@
                     ></a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
               <p class="text-center">
-                Not registered?
-                <RouterLink class="btn-link text-primary" to="/page-register">Register</RouterLink>
+                ¿No tienes una cuenta?
+                <RouterLink class="btn-link text-primary" to="/page-register"
+                  >Registro</RouterLink
+                >
               </p>
             </form>
           </div>
@@ -78,19 +91,22 @@
         <div class="col-xl-6 col-lg-6">
           <div class="pages-left h-100">
             <div class="login-content">
-              <RouterLink to="/"
-                ><img src="../../assets/images/logo-full.png" class="mb-3 logo-dark" alt=""
-              /></RouterLink>
-              <RouterLink to="/"
-                ><img src="../../assets/images/logi-white.png" class="mb-3 logo-light" alt=""
-              /></RouterLink>
-              <p>
-                CRM dashboard uses line charts to visualize customer-related metrics and trends over
-                time.
-              </p>
+              <!-- <RouterLink to="/"
+                ><img
+                  src="../../assets/images/logo-full.png"
+                  class="mb-3 logo-dark"
+                  alt=""
+              /></RouterLink> -->
+              <!-- <RouterLink to="/"
+                ><img
+                  src="../../assets/images/logi-white.png"
+                  class="mb-3 logo-light"
+                  alt=""
+              /></RouterLink> -->
+              <p>Explora, interactúa y gestiona con facilidad.</p>
             </div>
             <div class="login-media text-center">
-              <img src="../../assets/images/login.png" alt="" />
+              <img src="../../assets/images/loggin.png" alt="" />
             </div>
           </div>
         </div>
@@ -100,15 +116,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { RouterLink } from 'vue-router';
+import { defineComponent } from "vue";
+import { RouterLink } from "vue-router";
 
 export default defineComponent({
-  name: 'forgetPassword',
+  name: "forgetPassword",
   setup() {
-    return {}
-  }
-})
+    return {};
+  },
+});
 </script>
 
 <style scoped></style>

@@ -5,13 +5,18 @@
         <div class="col-lg-6 col-md-12 col-sm-12 mx-auto align-self-center">
           <div class="login-form">
             <div class="text-center">
-              <h3 class="title">Sign In</h3>
-              <p>Sign in to your account to start using W3CRM</p>
+              <h3 class="title">Iniciar sesión</h3>
+              <p>Inicie sesión para continuar al Dashboard</p>
             </div>
             <form action="/">
               <div class="mb-4">
                 <label class="mb-1 text-dark">Email</label>
-                <input type="email" class="form-control form-control" value="hello@example.com" />
+                <input
+                  type="email"
+                  class="form-control form-control"
+                  value=""
+                  placeholder="hola@ejemplo.com"
+                />
               </div>
               <div class="mb-4 position-relative">
                 <label class="mb-1 text-dark">Password</label>
@@ -19,32 +24,45 @@
                   :type="show ? 'text' : 'password'"
                   id="dz-password"
                   class="form-control"
-                  value="123456"
+                  value=""
+                  placeholder="********"
                 />
-                <span :class="`show-pass eye ${show ? 'active' : ''}`" @click="show = !show">
+                <span
+                  :class="`show-pass eye ${show ? 'active' : ''}`"
+                  @click="show = !show"
+                >
                   <i :class="`fa fa-eye-slash`"></i>
                   <i class="fa fa-eye"></i>
                 </span>
               </div>
               <div class="form-row d-flex justify-content-between mt-4 mb-2">
                 <div class="mb-4">
-                  <div class="form-check custom-checkbox mb-3">
-                    <input type="checkbox" class="form-check-input" id="customCheckBox1" required />
+                  <!-- <div class="form-check custom-checkbox mb-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="customCheckBox1"
+                      required
+                    />
                     <label class="form-check-label" for="customCheckBox1"
                       >Remember my preference</label
                     >
-                  </div>
+                  </div> -->
                 </div>
                 <div class="mb-4">
-                  <RouterLink to="/page-forgot-password" class="btn-link text-primary"
-                    >Forgot Password?</RouterLink
+                  <RouterLink
+                    to="/page-forgot-password"
+                    class="btn-link text-primary"
+                    >Olvidaste tu contraseña?</RouterLink
                   >
                 </div>
               </div>
               <div class="text-center mb-4">
-                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Iniciar sesión
+                </button>
               </div>
-              <h6 class="login-title"><span>Or continue with</span></h6>
+              <!-- <h6 class="login-title"><span>Or continue with</span></h6>
 
               <div class="mb-3">
                 <ul class="d-flex align-self-center justify-content-center">
@@ -77,10 +95,12 @@
                     ></a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
               <p class="text-center">
-                Not registered?
-                <RouterLink class="btn-link text-primary" to="/page-register">Register</RouterLink>
+                ¿No tienes una cuenta?
+                <RouterLink class="btn-link text-primary" to="/page-register"
+                  >Regístrate aquí</RouterLink
+                >
               </p>
             </form>
           </div>
@@ -88,20 +108,23 @@
         <div class="col-xl-6 col-lg-6">
           <div class="pages-left h-100">
             <div class="login-content">
-              <RouterLink to="/"
-                ><img src="../../assets/images/logo-full.png" class="mb-3 logo-dark" alt=""
-              /></RouterLink>
-              <RouterLink to="/"
-                ><img src="../../assets/images/logi-white.png" class="mb-3 logo-light" alt=""
-              /></RouterLink>
+              <!-- <RouterLink to="/"
+                ><img
+                  src="../../assets/images/logo-full.png"
+                  class="mb-3 logo-dark"
+                  alt=""
+              /></RouterLink> -->
+              <!-- <RouterLink to="/"
+                ><img
+                  src="../../assets/images/logi-white.png"
+                  class="mb-3 logo-light"
+                  alt=""
+              /></RouterLink> -->
 
-              <p>
-                CRM dashboard uses line charts to visualize customer-related metrics and trends over
-                time.
-              </p>
+              <p>Explora, interactúa y gestiona con facilidad.</p>
             </div>
             <div class="login-media text-center">
-              <img src="../../assets/images/login.png" alt="" />
+              <img src="../../assets/images/loggin.png" alt="" />
             </div>
           </div>
         </div>
@@ -111,17 +134,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { RouterLink } from 'vue-router'
+import { defineComponent, ref } from "vue";
+import { RouterLink } from "vue-router";
 
 export default defineComponent({
-  name: 'login_',
+  name: "login_",
   components: { RouterLink },
   setup() {
-    const show = ref(false)
-    return { show }
-  }
-})
+    const show = ref(false);
+    return { show };
+  },
+});
 </script>
 
 <style scoped></style>
